@@ -4,6 +4,23 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	
+	<script src="resources/js/jquery.js"></script>
+	<script type="text/javascript">
+		function deuCerto(dadosDaResposta) {
+		  alert("Conta paga com sucesso!");
+		}
+		
+		function pagaAgora(id) {
+			$.post("pagaConta", {'id' : id}, function() {
+			  $("#conta_"+id).html("Paga");
+			});
+			}
+		//function pagaAgora(id) {
+		  //$.get("pagaConta?id=" + id, deuCerto);
+		//}
+	</script>
+	
 	<title>Lista de Contas</title>
 </head>
 <body>
@@ -35,7 +52,12 @@
 	            </td>
 	            <td><fmt:formatDate value="${conta.dataPagamento.time}" pattern="dd/MM/yyyy"/></td>
 	            <td><a href="mostraConta?id=${conta.id}">Alterar</a></td>
-	            <td><a href="removeConta?id=${conta.id}">Remover</a></td>
+	            <td>
+	            	<a href="removeConta?id=${conta.id}">Remover</a> |
+	            	<c:if test="${conta.paga eq false}">
+	            		<a href="#" onclick="pagaAgora(${conta.id});">Pagar</a>
+	            	</c:if>
+	            </td>
 	        </tr>        
         </c:forEach>
     </table>
