@@ -3,6 +3,7 @@ package br.com.caelum.contas.controller;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -35,5 +36,26 @@ public class ContaController {
 		ModelAndView modelAnzdView = new ModelAndView("conta/lista");
 		modelAnzdView.addObject("todasContas", contas);
 		return modelAnzdView;
+	}
+	
+	@RequestMapping("/mostraConta")
+	public String mostra(Long id, Model model) {
+		ContaDAO contaDAO = new ContaDAO();
+		model.addAttribute("conta", contaDAO.buscaPorId(id));
+		return "conta/mostra";
+	}
+	
+	@RequestMapping("/alteraConta")
+	public String altera(Conta conta) {
+		ContaDAO dao = new ContaDAO();
+		dao.altera(conta);
+		return "redirect:listaContas";
+	}
+	
+	@RequestMapping("/removeConta")
+	public String remove(Conta conta) {
+		ContaDAO dao = new ContaDAO();
+		dao.remove(conta);
+		return "redirect:listaContas";
 	}
 }
