@@ -2,7 +2,7 @@
 Spring MVC4
 ===================
 
-This repository the full course files from the [course](https://cursos.alura.com.br/course/spring-mvc)
+This repository contains the full files from the [course](https://cursos.alura.com.br/course/spring-mvc)
 
 > ##Classes:
 
@@ -15,6 +15,11 @@ This repository the full course files from the [course](https://cursos.alura.com
 > - `Class 7` : Using AJAX
 > - `Class 8` : User Authentication
 > - `Class 9` : Dependency Injection
+
+## Certificate
+[![CC0](http://image.flaticon.com/icons/png/128/230/230357.png)](https://cursos.alura.com.br/user/jcristianrocha/course/spring-mvc/certificate)] |
+---|
+[Finished ✓](https://cursos.alura.com.br/user/jcristianrocha/course/spring-mvc/certificate) |
 
 ## Author
 [![Jhonatan Rocha](https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAXnAAAAJDJiMGJjYTUyLWU5NzUtNDU4Yi1iYTYxLWU4OGU2MTAwMmQ5OA.jpg)](https://jhonatanrocha.github.io) |
