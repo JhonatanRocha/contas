@@ -17,7 +17,7 @@ This repository contains the full files from the [course](https://cursos.alura.c
 > - `Class 9` : Dependency Injection
 
 ## Certificate
-[![CC0](http://image.flaticon.com/icons/png/128/230/230357.png)](https://cursos.alura.com.br/user/jcristianrocha/course/spring-mvc/certificate)] |
+[![CC0](http://image.flaticon.com/icons/png/128/230/230357.png)](https://cursos.alura.com.br/user/jcristianrocha/course/spring-mvc/certificate) |
 ---|
 [Finished ✓](https://cursos.alura.com.br/user/jcristianrocha/course/spring-mvc/certificate) |
 
